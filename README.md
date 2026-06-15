@@ -89,7 +89,7 @@ the site) matter far more than demographic features
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/customer-purchase-prediction
+git clone https://github.com/saitejo/customer-purchase-prediction
 cd customer-purchase-prediction
 ```
 
