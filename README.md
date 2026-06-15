@@ -62,3 +62,72 @@ Anonymized e-commerce user data with the following features:
 ## Key Findings
 
 Most important features (by coefficient magnitude):
+Pages_Viewed        →  0.461  (most influential)
+
+Products_Viewed     →  0.315
+
+Discount_Seen       →  0.265
+
+Previous_Purchases  →  0.237
+
+Time_On_Site        →  0.189
+
+Income              →  0.107
+
+**Insight:** Behavioral features (what the user does on 
+the site) matter far more than demographic features 
+(age, income) for predicting purchase intent.
+
+## Results
+
+| Metric | Score |
+|--------|-------|
+| Training Accuracy | 70.97% |
+| F1 Score (validation) | ~0.69 |
+
+## How to Run
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/yourusername/customer-purchase-prediction
+cd customer-purchase-prediction
+```
+
+### 2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Add your dataset
+Place these files in the project directory:
+train.csv
+
+public_test.csv
+
+private_test.csv
+
+### 4. Run the notebook
+```bash
+jupyter notebook notebook.ipynb
+```
+
+Runs top to bottom, generates `submission.csv` with predictions.
+
+## Tech Stack
+
+- **Python 3.14**
+- **pandas** — data loading and manipulation
+- **numpy** — numerical operations
+- **scikit-learn** — preprocessing, modeling, evaluation
+- **Jupyter Notebook** — development environment
+
+## Future Improvements
+
+- [ ] Encode categorical features (Device_Type, Traffic_Source)
+- [ ] Feature engineering (Pages_Viewed / Time_On_Site ratio)
+- [ ] Try ensemble models (Random Forest, XGBoost)
+- [ ] Hyperparameter tuning with GridSearchCV
+- [ ] Handle class imbalance with SMOTE
+
+## Project Structure
+custome
